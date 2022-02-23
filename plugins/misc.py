@@ -101,7 +101,7 @@ async def who_is(client, message):
             message=chat_photo.big_file_id
         )
         buttons = [[
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('🔐 𝗖𝗟𝗢𝗦𝗘', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -115,7 +115,7 @@ async def who_is(client, message):
         os.remove(local_user_photo)
     else:
         buttons = [[
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('🔐 𝗖𝗟𝗢𝗦𝗘', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -144,9 +144,9 @@ async def imdb_search(client, message):
             ]
             for movie in movies
         ]
-        await k.edit('𝚆𝚑𝚊𝚝 𝙸 𝙵𝚘𝚞𝚗𝚍 𝙵𝚛𝚘𝚖 𝙸𝚖𝚍𝚋 𝚊𝚛𝚎 シ︎', reply_markup=InlineKeyboardMarkup(btn))
+        await k.edit('𝗪𝗛𝗔𝗧 𝗜 𝗙𝗢𝗨𝗡𝗗 𝗢𝗡 𝗜𝗠𝗗𝗕 𝗔𝗥𝗘 シ︎', reply_markup=InlineKeyboardMarkup(btn))
     else:
-        await message.reply('𝙶𝚒𝚟𝚎 𝚖𝚎 𝚊 𝚖𝚘𝚟𝚒𝚎 𝚘𝚛 𝚜𝚎𝚛𝚒𝚎𝚜 𝙽𝚊𝚖𝚎 𝚃𝚘 𝙵𝚒𝚗𝚍 ☻︎')
+        await message.reply('𝗚𝗜𝗩𝗘 𝗠𝗘 𝗠𝗢𝗩𝗜𝗘 / 𝗦𝗘𝗥𝗜𝗘𝗦 𝗡𝗔𝗠𝗘 ☻︎')
 
 @Client.on_callback_query(filters.regex('^imdb'))
 async def imdb_callback(bot: Client, quer_y: CallbackQuery):
