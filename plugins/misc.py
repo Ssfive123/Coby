@@ -144,9 +144,9 @@ async def imdb_search(client, message):
             ]
             for movie in movies
         ]
-        await k.edit('Here is what i found on IMDb', reply_markup=InlineKeyboardMarkup(btn))
+        await k.edit('𝚆𝚑𝚊𝚝 𝙸 𝙵𝚘𝚞𝚗𝚍 𝙵𝚛𝚘𝚖 𝙸𝚖𝚍𝚋 𝚊𝚛𝚎 シ︎', reply_markup=InlineKeyboardMarkup(btn))
     else:
-        await message.reply('Give me a movie / series Name')
+        await message.reply('𝙶𝚒𝚟𝚎 𝚖𝚎 𝚊 𝚖𝚘𝚟𝚒𝚎 𝚘𝚛 𝚜𝚎𝚛𝚒𝚎𝚜 𝙽𝚊𝚖𝚎 𝚃𝚘 𝙵𝚒𝚗𝚍 ☻︎')
 
 @Client.on_callback_query(filters.regex('^imdb'))
 async def imdb_callback(bot: Client, quer_y: CallbackQuery):
