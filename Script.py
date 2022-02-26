@@ -17,10 +17,10 @@ class script(object):
 - <a href=https://t.me/smovieofficial>dk [OFLINE]</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
-- Filter is the feature were users can set automated replies for a particular keyword and LISA will respond whenever a keyword is found the message
+- Filter is the feature were users can set automated replies for a particular keyword and 𝕋𝔼𝕊𝕊𝔸 will respond whenever a keyword is found the message
 
 <b>NOTE:</b>
-1. LISA should have admin privillage.
+1. 𝕋𝔼𝕊𝕊𝔸 should have admin privillage.
 2. only admins can add filters in a chat.
 3. alert buttons have a limit of 64 characters.
 
@@ -31,7 +31,7 @@ class script(object):
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
     BUTTON_TXT = """Help: <b>Buttons</b>
 
-- LISA Supports both url and alert inline buttons.
+- 𝕋𝔼𝕊𝕊𝔸 Supports both url and alert inline buttons.
 
 <b>NOTE:</b>
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
@@ -66,7 +66,7 @@ class script(object):
     EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
 
 <b>NOTE:</b>
-these are the extra features of LISA
+these are the extra features of 𝕋𝔼𝕊𝕊𝔸
 
 <b>Commands and Usage:</b>
 • /id - <code>get id of a specified user.</code>
