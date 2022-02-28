@@ -120,14 +120,14 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("PODAHH KALLAH 🔒", show_alert=True)
+        return await query.answer("𝗣𝗢𝗗𝗔 𝗞𝗘𝗟𝗟𝗔", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.message_id)
     if not movies:
         return await query.answer("You are clicking on an old button which is expired.", show_alert=True)
     movie = movies[(int(movie_))]
-    await query.answer('Checking for Movie in database...')
+    await query.answer('𝗡𝗝𝗔𝗡 𝗠𝗢𝗩𝗜𝗘 𝗢𝗡𝗡 𝗧𝗛𝗔𝗣𝗣𝗔𝗧𝗧𝗘...')
     k = await manual_filters(bot, query.message, text=movie)
     if k == False:
         files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
@@ -135,7 +135,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('This Movie Not Found In DataBase')
+            k = await query.message.edit('𝗔𝗬𝗬𝗢 ! 𝗔𝗧𝗛 𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘𝗜𝗟 𝗜𝗟𝗟𝗔 .')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -364,7 +364,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     caption=f_caption,
                     protect_content=True if ident == "filep" else False 
                 )
-                await query.answer('Check PM, I have sent files in pm', show_alert=True)
+                await query.answer('𝗖𝗛𝗘𝗖𝗞 𝗣𝗠 , 𝗜 𝗛𝗔𝗩𝗘 𝗦𝗘𝗡𝗧 𝗙𝗜𝗟𝗘𝗦 𝗢𝗡 𝗬𝗢𝗨𝗥 𝗣𝗠', show_alert=True)
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !', show_alert=True)
         except PeerIdInvalid:
@@ -438,10 +438,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('UPDATES', url='https://t.me/s_movie_official_updates'), ]
+            InlineKeyboardButton('𝗨𝗣𝗗𝗔𝗧𝗘𝗦', url='https://t.me/s_movie_official_updates'), ]
          , [
-            InlineKeyboardButton('HOME', callback_data='start'),
-            InlineKeyboardButton('🔐 CLOSE', callback_data='close_data')
+            InlineKeyboardButton('𝗛𝗢𝗠𝗘', callback_data='start'),
+            InlineKeyboardButton('🔐 𝗖𝗟𝗢𝗦𝗘', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -722,7 +722,7 @@ async def auto_filter(client, msg, spoll=False):
     else:
         await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     if spoll:
-        await msg.message.delete(30)
+        await msg.message.delete()
 
 
 async def advantage_spell_chok(msg):
