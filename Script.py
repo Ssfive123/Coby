@@ -9,7 +9,7 @@ class script(object):
     ABOUT_TXT = """✪ ᴍʏ ɴᴀᴍᴇ: {}
 ✪ ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/dk_assist_bot>𝗱𝗸 [𝗢𝗙𝗟𝗜𝗡𝗘]</a>
 ✪ ᴛᴇᴀᴍ: <a href=https://t.me/dk_botx>𝗗𝗞 𝗕𝗢𝗧𝘅</a>
-✪ ʙᴏᴛ sᴇʀᴠᴇʀ: 𝙲𝙾𝙽𝚃𝙰𝙱𝙾
+✪ ʙᴏᴛ sᴇʀᴠᴇʀ: ᴄᴏɴᴛᴀʙᴏ
 ✪ ʙᴜɪʟᴅ ɪɴғᴏ: 𝚅9.7 [ 𝙱𝚎𝚃𝚊 ]"""
     SOURCE_TXT = """<b>NOTE:</b>
 
@@ -92,10 +92,10 @@ This module only works for my admins
 • /unban  - <code>to unban a user.</code>
 • /channel - <code>to get list of total connected channels</code>
 • /broadcast - <code>to broadcast a message to all users</code>"""
-    STATUS_TXT = """⍟ 𝙵𝙸𝙻𝙴𝚂 𝚂𝙰𝚅𝙴𝙳: <code>{}</code>
-⍟ 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
-⍟ 𝙶𝚁𝙾𝚄𝙿𝚂: <code>{}</code>
-⍟ 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱"""
+    STATUS_TXT = """⍟ ғɪʟᴇs sᴀᴠᴇᴅ: <code>{}</code>
+⍟ ᴜsᴇʀs: <code>{}</code>
+⍟ ɢʀᴏᴜᴘs: <code>{}</code>
+⍟ ᴏᴄᴄᴜᴘɪᴇᴅ: <code>{}</code> 𝙼𝚒𝙱"""
  
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
