@@ -42,7 +42,7 @@ async def save_group(bot, message):
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
-            text=f"<b>𝗧𝗵𝗮𝗻𝗸𝘆𝗼𝘂 𝗙𝗼𝗿 𝗔𝗱𝗱𝗶𝗻𝗴 𝗺𝗲 𝗶𝗻 {message.chat.title} ❣️\n\n 𝗠𝗔𝗞𝗘 𝗠𝗘 𝗔𝗗𝗠𝗜𝗡 𝗔𝗡𝗗 𝗘𝗡𝗝𝗢𝗬.</b>",
+            text=f"<b>Thanks For Adding me in {message.chat.title} ❣️\n\n Make Me Admin and Enjoy.</b>",
             reply_markup=reply_markup)
     else:
         settings = await get_settings(message.chat.id)
@@ -53,7 +53,7 @@ async def save_group(bot, message):
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
-                temp.MELCOW['welcome'] = await message.reply(f"<b>𝗛𝗘𝗬, {u.mention}, 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 {message.chat.title} 𝗙𝗥𝗜𝗘𝗡𝗗𝗦𝗜𝗡𝗘 𝗚𝗥𝗢𝗨𝗣𝗜𝗟 𝗔𝗗𝗗 𝗔𝗔𝗞𝗜 𝗣𝗘𝗪𝗘𝗥 𝗔𝗔𝗞𝗞 💖</b>")
+                temp.MELCOW['welcome'] = await message.reply(f"<b>HEY, {u.mention}, WELCOME {message.chat.title} FRIENDSINE OKKE GROUPIL ADD AAKI PEWER AAKU 💖</b>")
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
