@@ -435,7 +435,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/dk_botx'), ]
+            InlineKeyboardButton('ᴍᴏᴠɪᴇ ᴜᴘᴅᴀᴛᴇs', url='https://t.me/s_movie_official_updates'), ]
          , [
             InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('🔐 ᴄʟᴏsᴇ', callback_data='close_data')
@@ -537,7 +537,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode='html'
         )
     elif query.data == "rfrsh":
-        await query.answer("Fetching My DataBase")
+        await query.answer("ғᴇᴛᴄʜɪɴɢ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ")
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help'),
             InlineKeyboardButton('♻️', callback_data='rfrsh')
