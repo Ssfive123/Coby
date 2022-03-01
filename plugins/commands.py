@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('𝗨𝗣𝗗𝗔𝗧𝗘𝗦', url='https://t.me/dk_botx')
+                InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/dk_botx')
             ],
             [
-                InlineKeyboardButton('𝗛𝗘𝗟𝗣', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('ʜᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -64,7 +64,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟", url=invite_link.invite_link
+                    "ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=invite_link.invite_link
                 )
             ]
         ]
@@ -72,10 +72,10 @@ async def start(client, message):
         if message.command[1] != "subscribe":
             kk, file_id = message.command[1].split("_", 1)
             pre = 'checksubp' if kk == 'filep' else 'checksub' 
-            btn.append([InlineKeyboardButton(" 🔄 𝗧𝗥𝗬 𝗔𝗚𝗔𝗜𝗡", callback_data=f"{pre}#{file_id}")])
+            btn.append([InlineKeyboardButton(" 🔄 ᴛʀʏ ᴀɢᴀɪɴ", callback_data=f"{pre}#{file_id}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**𝗛𝗘𝗬 , 𝗝𝗢𝗜𝗡 𝗠𝗬 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝗧𝗢 𝗚𝗘𝗧 𝗬𝗢𝗨𝗥 𝗥𝗘𝗤𝗨𝗘𝗦𝗧!**",
+            text="**ʜᴇʏ , ᴊᴏɪɴ ᴍʏ ᴄʜᴀɴɴᴇʟ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ !**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
