@@ -53,6 +53,7 @@ async def start(client, message):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+await message.reply_chat_action("Typing")
         return
     if AUTH_CHANNEL and not await is_subscribed(client, message):
         try:
@@ -92,6 +93,7 @@ async def start(client, message):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+await message.reply_chat_action("Typing")
         return
     data = message.command[1]
     try:
