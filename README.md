@@ -1,5 +1,6 @@
 Base Repo Of Eva Maria , Bot Which are Not Public bots  .
 
+USE THIS REPO AS '''UPSTREAM_REPO''' IN HEROKU APP
 
 From Team @DK_BOTx Telegram
 
