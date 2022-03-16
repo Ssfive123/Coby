@@ -34,6 +34,6 @@ Commands
 • /ban  - to ban a user.
 • /unban  - to unban a user.
 • /channel - to get list of total connected channels
-• /broadcast - to broadcast a message to all Eva Maria users
+• /broadcast - to broadcast a message to all DK BOTx users
 • /batch - to create link for multiple posts
 • /link - to create link for one post
