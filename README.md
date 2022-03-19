@@ -1,8 +1,13 @@
 Base Repo Of Eva Maria , Bot Which are Not Public bots  .
 
-USE THIS REPO AS '''UPSTREAM_REPO''' IN HEROKU APP
-
 From Team @DK_BOTx Telegram
+
+ᴀᴜᴛᴏғɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴀᴅᴠᴀɴᴄᴇᴅ ғᴇᴀᴛᴜʀᴇs
+
+#### Deploy on Heroku
+**BEFORE YOU DEPLOY ON HEROKU, YOU SHOULD FORK THE REPO**<br>
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)</br>
+
 
 
 Help: Admin mods
