@@ -10,8 +10,8 @@ From Team @DK_BOTx Telegram
 
 #### Deploy in your VPS
 ````bash
-git clone https://github.com/DKBOTx/DKBOTx-FileStoreBot
-cd  DKBOTx-FileStoreBot
+git clone https://github.com/DKBOTx/private-bot
+cd  private-bot
 pip3 install -r requirements.txt
 # <Create config.py appropriately>
 python3 main.py
