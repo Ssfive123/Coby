@@ -8,7 +8,14 @@ From Team @DK_BOTx Telegram
 **BEFORE YOU DEPLOY ON HEROKU, YOU SHOULD FORK THE REPO**<br>
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)</br>
 
-
+#### Deploy in your VPS
+````bash
+git clone https://github.com/DKBOTx/DKBOTx-FileStoreBot
+cd  DKBOTx-FileStoreBot
+pip3 install -r requirements.txt
+# <Create config.py appropriately>
+python3 main.py
+````
 
 Help: Admin mods
 
