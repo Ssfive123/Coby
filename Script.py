@@ -5,7 +5,7 @@ class script(object):
     HELP_TXT = """ʜᴇʏ {}
 ʜᴇʀᴇ ɪs ᴍʏ ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅs."""
     ABOUT_TXT = """○ 𝖬𝗒 𝖭𝖺𝗆e : ᴀᴜᴛᴏғɪʟᴛᴇʀ ʙᴏᴛ
-○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='https://t.me/dk_assist_bot'>𝖽𝗄 [𝖮𝖥𝖫𝖨𝖭𝖤]</a>
+○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='https://t.me/vloggerdeven_TG'>𝖽𝗄 [𝖮𝖥𝖫𝖨𝖭𝖤]</a>
 ○ 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾 : 𝖯𝗒𝗍𝗁𝗈𝗇 𝟥 
 ○ 𝖫𝗂𝖻𝗋𝖺𝗋𝗒 : 𝖯𝗒𝗋𝗈𝗀𝗋𝖺𝗆 𝖺𝗌𝗒𝗇𝖼𝗂𝗈 𝟢.𝟣𝟩.𝟣 
 ○ 𝖲𝖾𝗋𝗏𝖾𝗋 : Contabo
