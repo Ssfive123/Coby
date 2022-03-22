@@ -1,5 +1,5 @@
-Base Repo Of Eva Maria , Bot Which are Not Public bots  .
-
+AutoFilter Bot code , Mainly Created For Bots Which are not public .
+This Code supports eva maria ! , So you can use as UPSTREAM_REPO var in heroku.
 From Team @DK_BOTx Telegram
 
 ᴀᴜᴛᴏғɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴀᴅᴠᴀɴᴄᴇᴅ ғᴇᴀᴛᴜʀᴇs
