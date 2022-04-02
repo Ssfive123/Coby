@@ -405,7 +405,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "start":
         buttons = [[
       
-            InlineKeyboardButton('😊 About', callback_data='about'),
+            InlineKeyboardButton('⚙️ Help', callback_data='help')
+            ],[
+            InlineKeyboardButton('📮 About', callback_data='about'),
             InlineKeyboardButton('🔒 Close', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -434,7 +436,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('ᴅᴋ ʙᴏᴛx', url='https://t.me/dk_botx'),
+            InlineKeyboardButton('Status', url='https://t.me/amnotperfectmoiveveno'),
             InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/dkbotxchats'),
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')
         ]]
