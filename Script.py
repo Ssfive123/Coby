@@ -5,7 +5,7 @@ class script(object):
     HELP_TXT = """ʜᴇʏ {}
 ʜᴇʀᴇ ɪs ᴍʏ ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅs."""
     ABOUT_TXT = """○ 𝖬𝗒 𝖭𝖺𝗆e : ᴀᴜᴛᴏғɪʟᴛᴇʀ ʙᴏᴛ
-○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='https://t.me/vloggerdeven_TG'>𝖽𝗄 [𝖮𝖥𝖫𝖨𝖭𝖤]</a>
+○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='https://t.me/am_not_perfect4k'>ADITHYAN</a>
 ○ 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾 : 𝖯𝗒𝗍𝗁𝗈𝗇 𝟥 
 ○ 𝖫𝗂𝖻𝗋𝖺𝗋𝗒 : 𝖯𝗒𝗋𝗈𝗀𝗋𝖺𝗆 𝖺𝗌𝗒𝗇𝖼𝗂𝗈 𝟢.𝟣𝟩.𝟣 
 ○ 𝖲𝖾𝗋𝗏𝖾𝗋 : Contabo
@@ -22,7 +22,7 @@ class script(object):
 - Filter is the feature were users can set automated replies for a particular keyword and 𝕋𝔼𝕊𝕊𝔸 will respond whenever a keyword is found the message
 
 <b>NOTE:</b>
-1. 𝕋𝔼𝕊𝕊𝔸 should have admin privillage.
+1. BOT should have admin privillage.
 2. only admins can add filters in a chat.
 3. alert buttons have a limit of 64 characters.
 
@@ -33,7 +33,7 @@ class script(object):
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
     BUTTON_TXT = """Help: <b>Buttons</b>
 
-- 𝕋𝔼𝕊𝕊𝔸 Supports both url and alert inline buttons.
+- BOT Supports both url and alert inline buttons.
 
 <b>NOTE:</b>
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
@@ -41,7 +41,7 @@ class script(object):
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/dk_botx)</code>
+<code>[Button Text](buttonurl:https://t.me/+_gaIOMP_AjM0MWNl)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
