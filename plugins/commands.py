@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/dk_botx')
+                InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/amnotperfectmoiveveno')
             ],
             [
                 InlineKeyboardButton('ʜᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -43,7 +43,9 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons = [[
         
-            InlineKeyboardButton('😊 About', callback_data='about'),
+            InlineKeyboardButton('⚙️ Help', callback_data='help')
+            ],[
+            InlineKeyboardButton('📮 About', callback_data='about'),
             InlineKeyboardButton('🔒 Close', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -83,7 +85,9 @@ async def start(client, message):
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
             
-            InlineKeyboardButton('😊 About', callback_data='about'),
+            InlineKeyboardButton('⚙️ Help', callback_data='help')
+            ],[
+            InlineKeyboardButton('📮 About', callback_data='about'),
             InlineKeyboardButton('🔒 Close', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
