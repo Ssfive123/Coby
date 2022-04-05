@@ -54,12 +54,22 @@ async def showid(client, message):
             quote=True
         )
 
+@Client.on_message(filters.command('about'))
+async def about(bot, update):
+    await update.reply_photo(
+            photo="https://telegra.ph/file/b076746aa3cafabb3d2a5.jpg",
+            caption='എനിക്ക് പ്രേത്യേകിച്ച് about,കഴിവ് ഒന്നും ഇല്ല..എന്റെ മുതലാളി ആണ് എന്റെ എല്ലാം (SHIVA SIR) Just മുതലാളി പറയും ഞാൻ അത് അനുസരിക്കും.. അനുസരിച്ചാൽ എനിക്ക് bun കിട്ടും.. 😌'
+    )
+
 @Client.on_message(filters.command('source'))
 async def source(bot, update):
-    await update.reply_photo('https://telegra.ph/file/e175384031bd8081ffd2b.jpg')
+    await update.reply_photo(
+            photo="https://telegra.ph/file/6d074de601bcb1028b51c.jpg",
+            caption='എന്റെ കോഡ് പ്രൈവറ്റ് ആണ്... വേണേൽ എന്റെ മുതലാളിയോട് ചോദിക്ക്.. 😌'
+    )
 
 @Client.on_message(filters.command('help'))
-async def source(bot, update):
+async def help(bot, update):
     await update.reply_photo(
             photo="https://telegra.ph/file/e175384031bd8081ffd2b.jpg",
             caption='നീ വന്നു എന്നെ ഹെല്പ് ചെയ് 😐 ഇവിടെ ഞാൻ ഒരു പണി എടുക്കുമ്പോളാണ് അവന്റെ ഒരു help പോടാ....😂'
