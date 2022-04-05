@@ -93,12 +93,12 @@ This module only works for my admins
 • /unban  - <code>to unban a user.</code>
 • /channel - <code>to get list of total connected channels</code>
 • /broadcast - <code>to broadcast a message to all users</code>"""
-    STATUS_TXT = """⍟ ғɪʟᴇs sᴀᴠᴇᴅ: <code>{}</code>
-⍟ ᴜsᴇʀs: <code>{}</code>
-⍟ ɢʀᴏᴜᴘs: <code>{}</code>
-⍟ ᴏᴄᴄᴜᴘɪᴇᴅ: <code>{}</code> 𝙼𝚒𝙱"""
+    STATUS_TXT = """📂 ғɪʟᴇs sᴀᴠᴇᴅ: <code>{}</code>
+👤 ᴜsᴇʀs: <code>{}</code>
+👥 ɢʀᴏᴜᴘs: <a href='https://t.me/movie_hub_main'>𝖬ᴏᴠɪᴇ 𝖧ᴜʙ</a> ᴏɴʟʏ
+📉 ᴏᴄᴄᴜᴘɪᴇᴅ: <code>{}</code> 𝙼𝚒𝙱"""
  
-    LOG_TEXT_G = """#NewGroup
+    LOG_TEXT_G = """📮 ᴄᴏʙʏ ʙᴏᴛ #NewGroup
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
 Added By - {}
