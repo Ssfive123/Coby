@@ -61,7 +61,6 @@ async def song(bot, update):
             caption='അതിനു എനിക്ക് പാട്ട് പാടാൻ അറിയില്ല ബ്രോ..🥲'
     )
 
-
 @Client.on_message(filters.command('about'))
 async def about(bot, update):
     await update.reply_photo(
