@@ -54,6 +54,14 @@ async def showid(client, message):
             quote=True
         )
 
+@Client.on_message(filters.command('song'))
+async def song(bot, update):
+    await update.reply_photo(
+            photo="https://telegra.ph/file/2a6b01414e4d8266e347e.jpg",
+            caption='അതിനു എനിക്ക് പാട്ട് പാടാൻ അറിയില്ല ബ്രോ..🥲'
+    )
+
+
 @Client.on_message(filters.command('about'))
 async def about(bot, update):
     await update.reply_photo(
