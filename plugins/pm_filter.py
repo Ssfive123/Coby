@@ -41,7 +41,7 @@ async def give_filter(client, message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("𝗣𝗢𝗗𝗔 𝗞𝗔𝗟𝗟𝗔𝗛🤪", show_alert=True)
+        return await query.answer("Request Your Own 🙂", show_alert=True)
     try:
         offset = int(offset)
     except:
@@ -91,20 +91,20 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("⏪ BACK", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"📃 Pages {round(int(offset) / 10) + 1} / {round(total / 10)}",
+            [InlineKeyboardButton("⭅ ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
+             InlineKeyboardButton(f"📃 ᴘᴀɢᴇs {round(int(offset) / 10) + 1} / {round(total / 10)}",
                                   callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
             [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
+             InlineKeyboardButton("ɴᴇxᴛ ⭆", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("⏪ BACK", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton("⭅ ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("ɴᴇxᴛ ⭆", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
     try:
@@ -120,14 +120,14 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("𝗣𝗢𝗗𝗔 𝗞𝗘𝗟𝗟𝗔", show_alert=True)
+        return await query.answer("Ok da", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.message_id)
     if not movies:
         return await query.answer("You are clicking on an old button which is expired.", show_alert=True)
     movie = movies[(int(movie_))]
-    await query.answer('𝗡𝗝𝗔𝗡 𝗠𝗢𝗩𝗜𝗘 𝗢𝗡𝗡 𝗧𝗛𝗔𝗣𝗣𝗔𝗧𝗧𝗘...')
+    await query.answer('Iam Finding 🙃...')
     k = await manual_filters(bot, query.message, text=movie)
     if k == False:
         files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
@@ -135,7 +135,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('𝗔𝗬𝗬𝗢 ! 𝗔𝗧𝗛 𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘𝗜𝗟 𝗜𝗟𝗟𝗔 .')
+            k = await query.message.edit('This Is Not In My Database, Sory Please Say To Admin To Add This Movie In My Database..🙂 .')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -163,14 +163,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     "I'm not connected to any groups!\nCheck /connections or connect to any groups",
                     quote=True
                 )
-                return await query.answer('😊')
+                return await query.answer('🙃')
 
         elif chat_type in ["group", "supergroup"]:
             grp_id = query.message.chat.id
             title = query.message.chat.title
 
         else:
-            return await query.answer('😊')
+            return await query.answer('🙃')
 
         st = await client.get_chat_member(grp_id, userid)
         if (st.status == "creator") or (str(userid) in ADMINS):
@@ -224,7 +224,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=keyboard,
             parse_mode="md"
         )
-        return await query.answer('aahaa❤️')
+        return await query.answer('Set ♥️')
     elif "connectcb" in query.data:
         await query.answer()
 
@@ -268,7 +268,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode="md"
             )
-        return await query.answer('𝗣𝗢𝗗𝗔𝗛𝗛')
+        return await query.answer('Ok Da..🙃')
     elif "deletecb" in query.data:
         await query.answer()
 
@@ -286,7 +286,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode="md"
             )
-        return await query.answer('𝗔𝗬𝗔𝗡𝗧𝗘𝗠𝗢𝗪𝗡𝗘!')
+        return await query.answer('Ok Da..🙃')
     elif query.data == "backcb":
         await query.answer()
 
@@ -297,7 +297,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(
                 "There are no active connections!! Connect to some groups first.",
             )
-            return await query.answer('𝗨𝗙𝗙 𝗜𝗝𝗔𝗔𝗧𝗛𝗜')
+            return await query.answer('Ok Da..🙃')
         buttons = []
         for groupid in groupids:
             try:
@@ -364,7 +364,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     caption=f_caption,
                     protect_content=True if ident == "filep" else False 
                 )
-                await query.answer('𝗖𝗛𝗘𝗖𝗞 𝗣𝗠 , 𝗜 𝗛𝗔𝗩𝗘 𝗦𝗘𝗡𝗧 𝗙𝗜𝗟𝗘𝗦 𝗢𝗡 𝗬𝗢𝗨𝗥 𝗣𝗠', show_alert=True)
+                await query.answer('Check PM, I Have Sent Files On Your PM..🙂📮', show_alert=True)
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !', show_alert=True)
         except PeerIdInvalid:
@@ -373,12 +373,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("𝗔𝗬𝗬𝗔𝗗𝗔 𝗡𝗘𝗘 𝗢𝗥𝗨 𝗞𝗜𝗟𝗟𝗔𝗗𝗜 𝗧𝗛𝗔𝗡𝗡𝗘 , 𝗣𝗢𝗬𝗜 𝗝𝗢𝗜𝗡 𝗖𝗛𝗘𝗬𝗧𝗛𝗜𝗧 𝗜𝗩𝗜𝗗𝗘 𝗡𝗝𝗘𝗞𝗞 𝗦𝗘𝗧𝗧𝗔𝗬𝗜 !", show_alert=True)
+            await query.answer("I Like Your Smartness But Don't Be Over Smart..😁, First Join The Channel Then Click On This Button...🙃♥️!", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
         if not files_:
-            return await query.answer('𝗔𝗬𝗬𝗢𝗗𝗔 𝗠𝗢𝗡𝗘 , 𝗔𝗧𝗛 𝗜𝗣𝗣𝗢 𝗜𝗟𝗟𝗔.')
+            return await query.answer('This Is Not Available Now....🥺')
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
@@ -416,7 +416,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-        await query.answer('𝗣𝗢𝗗𝗔𝗛 𝗞𝗔𝗟𝗟𝗔')
+        await query.answer('Ok Da...🙃')
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('ᴍᴀɴᴜᴀʟ ғɪʟᴛᴇʀ', callback_data='manuelfilter'),
