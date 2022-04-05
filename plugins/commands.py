@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/amnotperfectmoiveveno')
+                InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/MovieHubOtt')
             ],
             [
                 InlineKeyboardButton('ʜᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -43,10 +43,7 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons = [[
         
-            InlineKeyboardButton('⚙️ Help', callback_data='help')
-            ],[
-            InlineKeyboardButton('📮 About', callback_data='about'),
-            InlineKeyboardButton('🔒 Close', callback_data='close_data')
+            InlineKeyboardButton('ᴄʟɪᴄᴋ ʜᴇʀᴇ ғᴏʀ ᴍᴏʀᴇ ʙᴜᴛᴛᴏɴs', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action("Typing")
@@ -85,10 +82,7 @@ async def start(client, message):
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
             
-            InlineKeyboardButton('⚙️ Help', callback_data='help')
-            ],[
-            InlineKeyboardButton('📮 About', callback_data='about'),
-            InlineKeyboardButton('🔒 Close', callback_data='close_data')
+            InlineKeyboardButton('ᴄʟɪᴄᴋ ʜᴇʀᴇ ғᴏʀ ᴍᴏʀᴇ ʙᴜᴛᴛᴏɴs', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action("Typing")
@@ -355,7 +349,7 @@ async def delete_all_index(bot, message):
 @Client.on_callback_query(filters.regex(r'^autofilter_delete'))
 async def delete_all_index_confirm(bot, message):
     await Media.collection.drop()
-    await message.answer('𝗢𝗞𝗗𝗔')
+    await message.answer('Ok Da..🙃')
     await message.message.edit('Succesfully Deleted All The Indexed Files.')
 
 
