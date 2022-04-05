@@ -656,7 +656,7 @@ async def auto_filter(client, msg, spoll=False):
         req = message.from_user.id if message.from_user else 0
         btn.append(
             [InlineKeyboardButton("ᴘᴀɢᴇ", callback_data="pages"),
-             InlineKeyboardButton(f"📆{round(int(offset)/10)+1} - {round(total/10)}", callback_data="pages"),
+             InlineKeyboardButton(f"📆{round(int(offset)/10)+1} - {round(total_results/10)}", callback_data="pages"),
              InlineKeyboardButton("ɴᴇxᴛ", callback_data=f"next_{req}_{key}_{n_offset}")]
         )
     else:
