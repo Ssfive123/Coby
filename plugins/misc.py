@@ -58,6 +58,13 @@ async def showid(client, message):
 async def source(bot, update):
     await update.reply_photo('https://telegra.ph/file/e175384031bd8081ffd2b.jpg')
 
+@Client.on_message(filters.command('help'))
+async def source(bot, update):
+    await update.reply_photo(
+            photo="https://telegra.ph/file/e175384031bd8081ffd2b.jpg",
+            caption='Yes'
+    )
+
 @Client.on_message(filters.command(["info"]))
 async def who_is(client, message):
     # https://github.com/SpEcHiDe/PyroGramBot/blob/master/pyrobot/plugins/admemes/whois.py#L19
