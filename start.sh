@@ -1,12 +1,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/DKBOTx/private-bot.git /private-bot
+  git clone https://github.com/Ssfive123/Coby /Coby
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /private-bot
+  git clone $UPSTREAM_REPO /Coby
 fi
-cd /private-bot
+cd /Coby
 pip3 install -U -r requirements.txt
 echo "sᴛᴀʀᴛɪɴɢ 𝗗𝗞 𝗕𝗢𝗧𝘅........"
 python3 bot.py
