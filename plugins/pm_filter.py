@@ -698,7 +698,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>Hey 👋🏻 {message.from_user.mention} 😍 \n\n 🔖 Title : {search} \n 📫 Your File is Ready Now \n ⬇️ Click The Buttons For Your File ⬇️</b>"
+        cap = f"<b>Hey 👋🏻 {message.from_user.mention} 😍 \n\n 🔖 Title : {search} \n 📫 Your File is Ready Now \n\n⬇️ Click The Buttons For Your File ⬇️</b>"
     if imdb and imdb.get('poster'):
         try:
             fmsg = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
@@ -771,7 +771,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("<b>I couldn't find anything related to that \nDid you mean any one of These ? \n നിങ്ങൾ ഉദ്ദേശിച്ച മൂവി താഴെ കാണുന്ന വല്ലതും ആണ് എങ്കിൽ.അതിൽ ക്ലിക്ക് ചെയ്യുക..</b>", reply_markup=InlineKeyboardMarkup(btn))
+    await msg.reply("<b>I couldn't find anything related to that \nDid you mean any one of These ? \n\nനിങ്ങൾ ഉദ്ദേശിച്ച മൂവി താഴെ കാണുന്ന വല്ലതും ആണ് എങ്കിൽ.അതിൽ ക്ലിക്ക് ചെയ്യുക..</b>", reply_markup=InlineKeyboardMarkup(btn))
 
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
