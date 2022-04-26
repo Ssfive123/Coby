@@ -603,6 +603,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
     await query.answer('Podah Sherikkum')
+    elif query.data == 'tips':
+        await query.answer("=> Ask with correct spelling\n=> Don't ask movies those are not released in OTT Some Of Theatre Quality Available🤧\n=> For better results:\n\t\t\t\t\t\t- MovieName year\n\t\t\t\t\t\t- Eg: Kuruthi 2021", True)
+    try: await query.answer('Piracy Is Crime') 
+    except: pass
 
 
 async def auto_filter(client, msg, spoll=False):
