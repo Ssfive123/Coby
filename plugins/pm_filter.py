@@ -86,7 +86,7 @@ async def next_page(bot, query):
    
     btn.insert(1,
         [
-            InlineKeyboardButton(f'📁 Files: {len(files)}', 'dupe'),
+            InlineKeyboardButton(f'📁 Files: {len(files)}', 'tips'),
             InlineKeyboardButton(f'‼️ Tips', 'tips')
         ]
     )
