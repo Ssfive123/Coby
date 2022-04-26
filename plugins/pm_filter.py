@@ -139,7 +139,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('<b>This Is Not In My Database, Sory Please Say In @Waste_Time_TG To Add This Movie In My Database..🙂 \n\nനിങ്ങൾ ഉദ്ദേശിച്ച മൂവി എന്റെ ഡാറ്റയ്സിൽ ഇല്ല, ഈ മൂവി Database ലേക്ക് ആഡ് ആക്കാൻ @Waste_Time_TG ഇൽ പറയുക... 😌</b>')
+            k = await query.message.edit('<b><i>Movie Not available Reason\n\n1)O.T.T Or DVD Not Released\n\n2)Type Name With Year\n\n3)Movie Is Not Available in the database contact Admin</i></b>')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -710,7 +710,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>Hey 👋🏻 {message.from_user.mention} 😍 \n\n 🔖 Title : {search} \n 📫 Your File is Ready Now \n\n⬇️ Click The Buttons For Your File ⬇️</b>"
+        cap = f"<b><i>Requested Filim: {search}\nRequested By: {message.from_user.mention}</i></b>"
     if imdb and imdb.get('poster'):
         try:
             fmsg = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
