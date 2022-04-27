@@ -151,6 +151,7 @@ async def advantage_spoll_choker(bot, query):
             InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/MovieHubOtt'),
             InlineKeyboardButton('⭅ ʙᴀᴄᴋ', callback_data='start')
         ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
             await asyncio.sleep(10)
             await k.delete()
 
