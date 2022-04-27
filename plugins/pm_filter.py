@@ -88,13 +88,13 @@ async def next_page(bot, query):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🔰 {search} 🔰', 'dupe')
+            InlineKeyboardButton(f'🎬 {search} 🎬', 'dupe')
         ]
     )
     btn.insert(1,
         [
-            InlineKeyboardButton(f'📁 Files: {len(files)}', 'dupe'),
-            InlineKeyboardButton(f'‼️ Tips', 'tips')
+            InlineKeyboardButton(f'📁 ғɪʟᴇs: {len(files)}', 'dupe'),
+            InlineKeyboardButton(f'🎁 ᴛɪᴘs', 'tips')
         ]
     )
 
@@ -672,13 +672,13 @@ async def auto_filter(client, msg, spoll=False):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🔰 {search} 🔰', 'dupe')
+            InlineKeyboardButton(f'🎬 {search} 🎬', 'dupe')
         ]
     )
     btn.insert(1,
         [
-            InlineKeyboardButton(f'📁 Files: {total_results}', 'dupe'),
-            InlineKeyboardButton(f'‼️ Tips', 'tips')
+            InlineKeyboardButton(f'📁 ғɪʟᴇs: {total_results}', 'dupe'),
+            InlineKeyboardButton(f'🎁 ᴛɪᴘs', 'tips')
         ]
     )
 
