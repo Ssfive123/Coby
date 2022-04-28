@@ -97,6 +97,13 @@ async def next_page(bot, query):
             InlineKeyboardButton(f'🎁 ᴛɪᴘs', 'tips')
         ]
     )
+   btn.insert(2,
+        [
+            InlineKeyboardButton(f'📮 ɪɴғᴏ: {len(files)}', 'info'),
+            InlineKeyboardButton(f'ᴍᴏᴠɪᴇs', 'movies'),
+            InlineKeyboardButton(f'sᴇʀɪᴇs', 'series')
+        ]
+    )
 
     if 0 < offset <= 6:
         off_set = 0
@@ -692,6 +699,13 @@ async def auto_filter(client, msg, spoll=False):
         [
             InlineKeyboardButton(f'📁 ғɪʟᴇs: {total_results}', 'dupe'),
             InlineKeyboardButton(f'🎁 ᴛɪᴘs', 'tips')
+        ]
+    )
+    btn.insert(2,
+        [
+            InlineKeyboardButton(f'📮 ɪɴғᴏ: {len(files)}', 'info'),
+            InlineKeyboardButton(f'ᴍᴏᴠɪᴇs', 'movies'),
+            InlineKeyboardButton(f'sᴇʀɪᴇs', 'series')
         ]
     )
 
