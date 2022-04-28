@@ -97,7 +97,7 @@ async def next_page(bot, query):
             InlineKeyboardButton(f'🎁 ᴛɪᴘs', 'tips')
         ]
     )
-   btn.insert(2,
+    btn.insert(2,
         [
             InlineKeyboardButton(f'📮 ɪɴғᴏ: {len(files)}', 'info'),
             InlineKeyboardButton(f'ᴍᴏᴠɪᴇs', 'movies'),
