@@ -1,10 +1,10 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/4kcinemas/Netflix-Bot /Coby
+  git clone https://github.com/4kcinemas/Netflix-Bot /Netflix-Bot
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /Coby
+  git clone $UPSTREAM_REPO /Netflix-Bot
 fi
 cd /Coby
 pip3 install -U -r requirements.txt
