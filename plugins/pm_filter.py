@@ -677,7 +677,7 @@ async def auto_filter(client, msg, spoll=False):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🎬 {search} 🎬', 'dupe')
+            InlineKeyboardButton(f'🎬 {search} 🎬', 'reqst1')
         ]
     )
     btn.insert(1,
