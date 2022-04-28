@@ -763,7 +763,7 @@ async def auto_filter(client, msg, spoll=False):
     await fmsg.delete()
     await message.reply_text(text=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
     await asyncio.sleep(3)
-    await k.delete()
+    await delete()
   
     if spoll:
         await msg.message.delete()
