@@ -1,23 +1,23 @@
 class script(object):
     START_TXT = """<b>Hᴇʟʟᴏ {}
     
-Sᴏʀʀʏ ɪ ᴏɴʟʏ ᴡᴏʀᴋ ᴏɴ <a href='https://t.me/movie_hub_main'>𝖬ᴏᴠɪᴇ 𝖧ᴜʙ</a> Gʀᴏᴜᴘ. Nᴏ ᴏᴛʜᴇʀ ᴄᴏᴍᴍᴀɴᴅ ᴡɪʟʟ ᴡᴏʀᴋ ᴏɴ ᴛʜɪs ʙᴏᴛ ᴇxᴄᴇᴘᴛ sᴛᴀʀᴛ. ᴅᴏɴ’ᴛ ᴡᴀsᴛᴇ ʏᴏᴜʀ ᴛɪᴍᴇ</b>
+Sᴏʀʀʏ ɪ ᴏɴʟʏ ᴡᴏʀᴋ ᴏɴ <a href='https://t.me/Netflix_Movies_Group'>ɴᴇᴛғʟɪx ᴍᴏᴠɪᴇs</a> Gʀᴏᴜᴘ. Nᴏ ᴏᴛʜᴇʀ ᴄᴏᴍᴍᴀɴᴅ ᴡɪʟʟ ᴡᴏʀᴋ ᴏɴ ᴛʜɪs ʙᴏᴛ ᴇxᴄᴇᴘᴛ sᴛᴀʀᴛ. ᴅᴏɴ’ᴛ ᴡᴀsᴛᴇ ʏᴏᴜʀ ᴛɪᴍᴇ</b>
 """
     HELP_TXT = """<b>Hᴇʟʟᴏ {}
     
-Sᴏʀʀʏ ɪ ᴏɴʟʏ ᴡᴏʀᴋ ᴏɴ <a href='https://t.me/movie_hub_main'>𝖬ᴏᴠɪᴇ 𝖧ᴜʙ</a> Gʀᴏᴜᴘ. Nᴏ ᴏᴛʜᴇʀ ᴄᴏᴍᴍᴀɴᴅ ᴡɪʟʟ ᴡᴏʀᴋ ᴏɴ ᴛʜɪs ʙᴏᴛ ᴇxᴄᴇᴘᴛ sᴛᴀʀᴛ. ᴅᴏɴ’ᴛ ᴡᴀsᴛᴇ ʏᴏᴜʀ ᴛɪᴍᴇ</b>"""
+Sᴏʀʀʏ ɪ ᴏɴʟʏ ᴡᴏʀᴋ ᴏɴ <a href='https://t.me/Netflix_Movies_Group'>ɴᴇᴛғʟɪx ᴍᴏᴠɪᴇs</a> Gʀᴏᴜᴘ. Nᴏ ᴏᴛʜᴇʀ ᴄᴏᴍᴍᴀɴᴅ ᴡɪʟʟ ᴡᴏʀᴋ ᴏɴ ᴛʜɪs ʙᴏᴛ ᴇxᴄᴇᴘᴛ sᴛᴀʀᴛ. ᴅᴏɴ’ᴛ ᴡᴀsᴛᴇ ʏᴏᴜʀ ᴛɪᴍᴇ</b>"""
     ABOUT_TXT = """<b>⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟
     
-• ꜰᴜʟʟ ɴᴀᴍᴇ : sʜɪᴠᴀ
-• ᴜꜱᴇʀɴᴀᴍᴇ : @OGGY123kph
-• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='https://t.me/OGGY123kph'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
+• ꜰᴜʟʟ ɴᴀᴍᴇ : sᴀʀᴀᴛʜɪ
+• ᴜꜱᴇʀɴᴀᴍᴇ : @Sarathi_admin
+• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='https://t.me/Sarathi_admin'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
 “ Failure is an option here. If things are not failing, you are not innovating enough. ”</b>"""
     SOURCE_TXT = """<b>NOTE:</b>
 
 - ഇപ്പൊ കിട്ടും നോക്കി ഇരുന്നോ .
 
 <b>DEVS:</b>
-- <a href=https://t.me/smovieofficial>dk [OFLINE]</a>"""
+- <a href=https://t.me/ss_linkz>ss ʟɪɴᴋᴢ</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and 𝕋𝔼𝕊𝕊𝔸 will respond whenever a keyword is found the message
@@ -96,7 +96,7 @@ This module only works for my admins
     STATUS_TXT = """📂 ғɪʟᴇs sᴀᴠᴇᴅ: <code>{}</code>
 👤 ᴜsᴇʀs: <code>{}</code>
 👥 ɢʀᴏᴜᴘs: <code>{}</code>
-📉 ᴏᴄᴄᴜᴘɪᴇᴅ: <code>{}</code> MB"""
+📉 ᴏᴄᴄᴜᴘɪᴇᴅ: <code>{}</code> """
  
     LOG_TEXT_G = """📮 ᴄᴏʙʏ ʙᴏᴛ #NewGroup
 Group = {}(<code>{}</code>)
