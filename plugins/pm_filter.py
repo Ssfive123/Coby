@@ -88,23 +88,18 @@ async def next_page(bot, query):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🎬 {search} 🎬', 'reqst1')
-        ]
-    )
-    btn.insert(1,
-        [
-            InlineKeyboardButton(f'📂 ғɪʟᴇs: {len(files)}', 'dupe'),
-            InlineKeyboardButton(f'🎁 ᴛɪᴘs', 'tips'),
-            InlineKeyboardButton(f'📮 ɪɴғᴏ', 'info')
+            InlineKeyboardButton(f'ɪɴғᴏ', 'info'),
+                InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'movies'),
+                InlineKeyboardButton(f'sᴇʀɪᴇs', 'series')
         ]
     )
 
-    if 0 < offset <= 6:
+    if 0 < offset <= 7:
         off_set = 0
     elif offset == 0:
         off_set = None
     else:
-        off_set = offset - 6
+        off_set = offset - 7
     if n_offset == 0:
         btn.append(
             [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{round(int(offset)/10)+1} - {round(total/10)}", callback_data="pages"), InlineKeyboardButton("ᴅᴇʟᴇᴛᴇ", callback_data="close_pages")]
@@ -147,7 +142,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit("<b>📍 Movie Not available Reasons\n\n<i>1) O.T.T Or DVD Not Released\n\n2) Type Name With Year</i> \n\n3) Movie Is Not Available in the database Say In Our Support Group To Add This Movie In My Database \n\n©️ @Coby_Support</b>")
+            k = await query.message.edit("<b>📍 Movie Not available Reasons\n\n<i>1) O.T.T Or DVD Not Released\n\n2) Type Name With Year</i> \n\n3) Movie Is Not Available in the database Say In Our Support Group To Add This Movie In My Database \n\n©️ @SS_Linkz</b>")
             button = [
                 InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/MovieHubOtt')
               ]
@@ -622,16 +617,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_reply_markup(reply_markup)
     elif query.data == "close":
         await query.message.delete()
-    elif query.data == 'tips':
-        await query.answer("🔰 Ask with correct spelling\n🔰 Don't ask movies those are not released in OTT Some Of Theatre Quality Available🤧\n🔰 For better results:\n\t\t\t\t\t\t- MovieName year\n\t\t\t\t\t\t- Eg: Kuruthi 2021\n\tⒸ ᴍᴏᴠɪᴇ ʜᴜʙ", True)
-    elif query.data == 'reqst1':
-        await query.answer("Hey Bro 😍\n\n🎯 Click On The Button below The Files You Want And Start The Bot ⬇️", True)
     elif query.data == 'info':
-        await query.answer("⚠︎ Information ⚠︎\n\nAfter 3 minutes this message will be automatically deleted\n\nIf you do not see the requested movie / series file, look at the next page\n\nⒸ ᴍᴏᴠɪᴇ ʜᴜʙ", True)
+        await query.answer("⚠︎ Information ⚠︎\n\nAfter 30 minutes this message will be automatically deleted\n\nIf you do not see the requested movie / series file, look at the next page\n\nⒸ ɴᴇᴛғʟɪx ᴍᴏᴠɪᴇs ɢʀᴏᴜᴘ", True)
     elif query.data == 'movies':
-        await query.answer("ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ ғᴏʀᴍᴀᴛ\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀsᴛᴇ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ᴍᴀsᴛᴇʀ ᴏʀ ᴍᴀsᴛᴇʀ 2021\n\n🚯 ᴅᴏɴᴛ ᴜsᴇ ➠ ':(!,./)\n\nⒸ ᴍᴏᴠɪᴇ ʜᴜʙ", True)
+        await query.answer("ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ ғᴏʀᴍᴀᴛ\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀsᴛᴇ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ᴍᴀsᴛᴇʀ ᴏʀ ᴍᴀsᴛᴇʀ 2021\n\n🚯 ᴅᴏɴᴛ ᴜsᴇ ➠ ':(!,./)\n\nⒸ ɴᴇᴛғʟɪx ᴍᴏᴠɪᴇs ɢʀᴏᴜᴘ", True)
     elif query.data == 'series':
-        await query.answer("sᴇʀɪᴇs ʀᴇǫᴜᴇsᴛ ғᴏʀᴍᴀᴛ\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ sᴇʀɪᴇs ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀsᴛᴇ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : Alive ᴏʀ Alive S01E01\n\n🚯 ᴅᴏɴᴛ ᴜsᴇ ➠ ':(!,./)\n\nⒸ ᴍᴏᴠɪᴇ ʜᴜʙ", True)
+        await query.answer("sᴇʀɪᴇs ʀᴇǫᴜᴇsᴛ ғᴏʀᴍᴀᴛ\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ sᴇʀɪᴇs ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀsᴛᴇ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : Alive ᴏʀ Alive S01E01\n\n🚯 ᴅᴏɴᴛ ᴜsᴇ ➠ ':(!,./)\n\nⒸ ɴᴇᴛғʟɪx ᴍᴏᴠɪᴇs ɢʀᴏᴜᴘ", True)
     elif query.data == 'spelling':
         await query.answer("⚠️Search Google.com Find the Correct Spelling of Movie Name and Year. Type that in Group to get the Files⚠️", True)
     try: await query.answer('Piracy Is Crime') 
@@ -686,14 +677,9 @@ async def auto_filter(client, msg, spoll=False):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🎬 {search} 🎬', 'reqst1')
-        ]
-    )
-    btn.insert(1,
-        [
-            InlineKeyboardButton(f'📂 ғɪʟᴇs: {total_results}', 'dupe'),
-            InlineKeyboardButton(f'🎁 ᴛɪᴘs', 'tips'),
-            InlineKeyboardButton(f'📮 ɪɴғᴏ', 'info')
+            InlineKeyboardButton(f'ɪɴғᴏ', 'info'),
+            InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'movies'),
+            InlineKeyboardButton(f'sᴇʀɪᴇs', 'series')
         ]
     )
 
