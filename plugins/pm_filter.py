@@ -759,7 +759,10 @@ async def auto_filter(client, msg, spoll=False):
     else:
         fmsg = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     
-    await asyncio.sleep(DELETE_TIME)
+    await asyncio.sleep(10)
+    await fmsg.delete()
+    await message.reply_text(text=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
+    await asyncio.sleep(3)
     await fmsg.delete()
 
     if spoll:
