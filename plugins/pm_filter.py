@@ -144,7 +144,7 @@ async def advantage_spoll_choker(bot, query):
         else:
             k = await query.message.edit("<b>📍 Movie Not available Reasons\n\n<i>1) O.T.T Or DVD Not Released\n\n2) Type Name With Year</i> \n\n3) Movie Is Not Available in the database Say In Our Support Group To Add This Movie In My Database \n\n©️ @SS_Linkz</b>")
             button = [
-                InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/MovieHubOtt')
+                InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/SS_Linkz')
               ]
             await asyncio.sleep(10)
             await k.delete()
