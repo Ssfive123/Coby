@@ -1,6 +1,7 @@
-AutoFilter Bot code , Mainly Created For Bots Which are not public .
-This Code supports eva maria ! , So you can use as UPSTREAM_REPO var in heroku.
-From Team @Coby_Support Telegram
+# COBY_FILTER_BOT
+Very Sempil Bot Auto Filter bot
+##[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Bot+Name+»+Coby+Filter+Bot!;created+by+Coby+Support+Team!;A+simple+autofilter+Bot!;Auto+filter+with+double+button!;start+message+with+pic!;and+all+futures!)
+</p>
 
 ᴀᴜᴛᴏғɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴀᴅᴠᴀɴᴄᴇᴅ ғᴇᴀᴛᴜʀᴇs
 
