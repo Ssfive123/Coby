@@ -95,8 +95,8 @@ This module only works for my admins
 • /broadcast - <code>to broadcast a message to all users</code>"""
     STATUS_TXT = """📂 ғɪʟᴇs sᴀᴠᴇᴅ: <code>{}</code>
 👤 ᴜsᴇʀs: <code>{}</code>
-👥 ɢʀᴏᴜᴘs: <a href='https://t.me/movie_hub_main'>𝖬ᴏᴠɪᴇ 𝖧ᴜʙ</a> ᴏɴʟʏ
-📉 ᴏᴄᴄᴜᴘɪᴇᴅ: <code>{}</code> 𝙼𝚒𝙱"""
+👥 ɢʀᴏᴜᴘs: <code>{}</code>
+📉 ᴏᴄᴄᴜᴘɪᴇᴅ: <code>{}</code> MB"""
  
     LOG_TEXT_G = """📮 ᴄᴏʙʏ ʙᴏᴛ #NewGroup
 Group = {}(<code>{}</code>)
