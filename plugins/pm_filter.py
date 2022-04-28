@@ -772,7 +772,9 @@ async def auto_filter(client, msg, spoll=False):
                         ]
                     )
                 )
-
+    await asyncio.sleep(3)
+    await k.delete()
+  
     if spoll:
         await msg.message.delete()
 
