@@ -827,7 +827,7 @@ async def advantage_spell_chok(msg):
     await msg.reply("<b><i>I couldn't find anything related to that Did you mean any one of these?\n\nനിങ്ങൾ ഉദ്ദേശിച്ച മൂവി താഴെ കാണുന്ന വല്ലതും ആണ് എങ്കിൽ.അതിൽ ക്ലിക്ക് ചെയ്യുക</i></b>", reply_markup=InlineKeyboardMarkup(btn))
     await asyncio.sleep(8)
     await msg.delete()
-    return
+   
 
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
