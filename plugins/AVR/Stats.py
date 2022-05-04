@@ -6,12 +6,9 @@ import time
 import heroku3
 import requests
 from pyrogram import Client, filters
-from info import COMMAND_HAND_LER
 
 #=====================================================
 BOT_START_TIME = time.time()
-
-HEROKU_API_KEY = (os.environ.get("HEROKU_API_KEY", ""))
 #=====================================================
 
 @Client.on_message(filters.command("ping"))
