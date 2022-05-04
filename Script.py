@@ -11,6 +11,7 @@ Sᴏʀʀʏ ɪ ᴏɴʟʏ ᴡᴏʀᴋ ᴏɴ <a href='https://t.me/movie_hub_main'>
 • ꜰᴜʟʟ ɴᴀᴍᴇ : sʜɪᴠᴀ
 • ᴜꜱᴇʀɴᴀᴍᴇ : @OGGY123kph
 • ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='https://t.me/OGGY123kph'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
+
 “ Failure is an option here. If things are not failing, you are not innovating enough. ”</b>"""
     SOURCE_TXT = """<b>NOTE:</b>
 
