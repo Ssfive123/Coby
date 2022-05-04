@@ -236,8 +236,8 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton("💌 ɪɴғᴏ", callback_data="info"),
-                                              InlineKeyboardButton("💞 sʜᴀʀᴇ", url="https://t.me/share/url?url=😱%20MOVIE%20HUB.²·⁰%20😱%0A%0Aഏത്%20അർധരാത്രി%20ചോദിച്ചാലും%20പടം%20കിട്ടും,%20ലോകത്തിലെ%20ഒട്ടുമിക്ക%20ഭാഷകളിലുമുള്ള%20സിനിമകളുടെ%20കളക്ഷൻ..%20❤️%0A%0A👇%20GROUP%20LINK%20👇%0A@movie_hub_main%0A@movie_hub_main%0A@movie_hub_main") ],
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton("💌 ᴛɪᴘs", callback_data="tips"),
+                                              InlineKeyboardButton("💝 sʜᴀʀᴇ", url="https://t.me/share/url?url=😱%20MOVIE%20HUB.²·⁰%20😱%0A%0Aഏത്%20അർധരാത്രി%20ചോദിച്ചാലും%20പടം%20കിട്ടും,%20ലോകത്തിലെ%20ഒട്ടുമിക്ക%20ഭാഷകളിലുമുള്ള%20സിനിമകളുടെ%20കളക്ഷൻ..%20❤️%0A%0A👇%20GROUP%20LINK%20👇%0A@movie_hub_main%0A@movie_hub_main%0A@movie_hub_main") ],
                                             [ InlineKeyboardButton("🔮 ᴍᴏᴠɪᴇ ᴜᴘᴅᴀᴛᴇs 🔮", url="https://t.me/moviehubgroupp") ] ] ),
                                             
         protect_content=True if pre == 'filep' else False,
