@@ -1,3 +1,4 @@
+import asyncio
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong, PeerIdInvalid
@@ -54,7 +55,8 @@ async def save_group(bot, message):
                     except:
                         pass
                 temp.MELCOW['welcome'] = await message.reply(f"<b>ʜᴇʏ, {u.mention}, ᴡᴇʟᴄᴏᴍᴇ {message.chat.title} ғʀɪᴇɴᴅɪɴᴇ ᴏᴋᴋᴇ ɢʀᴏᴜᴘɪʟ ᴀᴅᴅ ᴀᴀᴋᴋɪ ᴘᴇᴡᴇʀ ᴀᴋᴋᴇɴɴᴇ 💖</b>")
-
+                await asyncio.sleep(50)
+                await temp.MELCOW['welcome'].delete()
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
