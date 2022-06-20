@@ -750,8 +750,7 @@ async def auto_filter(client, msg, spoll=False):
             poster=imdb['poster'],
             plot=imdb['plot'],
             rating=imdb['rating'],
-            url=imdb['url'],
-            **locals()
+            url=imdb['url']
         )
     else:
         cap = f"<b>Hey 👋🏻 {message.from_user.mention} 😍\n\n<i>🔖 Title : {search}\n📫 Your Files is Ready Now</i></b>"
