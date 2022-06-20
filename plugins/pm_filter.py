@@ -91,9 +91,9 @@ async def next_page(bot, query):
     )
     btn.insert(1,
         [
-            InlineKeyboardButton(f'📂 ғɪʟᴇs: {len(files)}', 'dupe'),
-            InlineKeyboardButton(f'🎁 ᴛɪᴘs', 'tips'),
-            InlineKeyboardButton(f'📮 ɪɴғᴏ', 'info')
+            InlineKeyboardButton(f'📂 Files: {len(files)}', 'dupe'),
+            InlineKeyboardButton(f'🎁 Tips', 'tips'),
+            InlineKeyboardButton(f'📮 Info', 'info')
         ]
     )
 
@@ -105,24 +105,24 @@ async def next_page(bot, query):
         off_set = offset - 6
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("ᴘᴀɢᴇs", callback_data="pages"),
-             InlineKeyboardButton(f"{round(int(offset) / 10) + 1} / {round(total / 10)}",
+            [InlineKeyboardButton("💽 Pages", callback_data="pagees"),
+             InlineKeyboardButton(f"{round(int(offset) / 10) + 1} / {round(total / 10)} 💽",
                                   callback_data="pages"),
-             InlineKeyboardButton("⏪ ᴘʀᴇᴠɪᴏᴜs", callback_data=f"next_{req}_{key}_{off_set}")]
+             InlineKeyboardButton("⏪ Previous", callback_data=f"next_{req}_{key}_{off_set}")]
         )
     elif off_set is None:
         btn.append(
             [
-                InlineKeyboardButton("ᴘᴀɢᴇs", callback_data="pages"),
-                InlineKeyboardButton(f"{round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("ɴᴇxᴛ", callback_data=f"next_{req}_{key}_{n_offset}")]
+                InlineKeyboardButton("💽 Pages", callback_data="pagees"),
+                InlineKeyboardButton(f"{round(int(offset) / 10) + 1} / {round(total / 10)} 💽", callback_data="pagees"),
+                InlineKeyboardButton("Next ⏩️", callback_data=f"next_{req}_{key}_{n_offset}")]
         )
     else:
         btn.append(
             [
-                InlineKeyboardButton("⏪ ᴘʀᴇᴠɪᴏᴜs", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"{round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("ɴᴇxᴛ ⏩️", callback_data=f"next_{req}_{key}_{n_offset}")]
+                InlineKeyboardButton("⏪ Previous", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton(f"{round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pagees"),
+                InlineKeyboardButton("Next ⏩️", callback_data=f"next_{req}_{key}_{n_offset}")]
         )
 
     try:
@@ -642,6 +642,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("⚠️Search Google.com Find the Correct Spelling of Movie Name and Year. Type that in Group to get the Files⚠️", True)
     elif query.data == "neosub":
         await query.answer("അഥവാ ഗ്രൂപ്പ്‌ കോപ്പിറൈറ് കിട്ടി പോയാൽ.. പുതിയ ഗ്രൂപ്പ്‌ തുടങ്ങുമ്പോൾ ഇപ്പോൾ ജോയിൻ ആകുന്ന ചാനൽ വഴി ആയിരിക്കും അറിയിക്കുന്നത് 🤥",show_alert=True)
+    elif query.data == "pagees:
+        await query.answer("💽 Pages Means 5 Files In One Page 💽\n\n♦️നിങ്ങൾക് ആവശ്യം ഉള്ള ഫയൽസ് കാണുന്നില്ലെങ്കിൽ Click On Next Page \n\n♦️If You Not See Your Files On This Page Then Click On Next Page..😌,",show_alert=True)
     elif query.data == "shivapm":
         await query.answer("ക്യാപ്ഷയിൽ കാണുന്ന username അല്ലകിൽ permanent ലിങ്ക് ക്ലിക്ക് ചെയ്താൽ ഡയറക്റ്റ് എന്റെ ഡിഎം ഇലോട്ടു വെരും അത്കൊണ്ട് അവുടെ ക്ലിക്ക് ചെയ്യ് 😐\n\nദയവു ചെയ്തു മൂവി ഒന്നും വന്നു ചോദിക്കല്ലേ ....😑", show_alert=True)
     try: await query.answer('Piracy Is Crime') 
@@ -674,7 +676,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"▫ {get_size(file.file_size)} ‣ {file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"📂 {get_size(file.file_size)} ‣ {file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -701,9 +703,9 @@ async def auto_filter(client, msg, spoll=False):
     )
     btn.insert(1,
         [
-            InlineKeyboardButton(f'📂 ғɪʟᴇs: {total_results}', 'dupe'),
-            InlineKeyboardButton(f'🎁 ᴛɪᴘs', 'tips'),
-            InlineKeyboardButton(f'📮 ɪɴғᴏ', 'info')
+            InlineKeyboardButton(f'📂 Files: {total_results}', 'dupe'),
+            InlineKeyboardButton(f'🎁 Tips', 'tips'),
+            InlineKeyboardButton(f'📮 Info', 'info')
         ]
     )
 
@@ -712,9 +714,9 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton("ᴘᴀɢᴇs", callback_data="pages"),
-             InlineKeyboardButton(text=f"1/{round(int(total_results) / 10)}", callback_data="pages"),
-             InlineKeyboardButton(text="ɴᴇxᴛ", callback_data=f"next_{req}_{key}_{offset}")]
+            [InlineKeyboardButton("💽 Pages", callback_data="pagees"),
+             InlineKeyboardButton(text=f"1/{round(int(total_results) / 10)} 💽", callback_data="pages"),
+             InlineKeyboardButton(text="Next ⏩️", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
