@@ -720,6 +720,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text="ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs ᴀᴠᴀɪʟᴀʙʟᴇ", callback_data="pages")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
+    TEMPLATE = settings['template']
     if imdb:
         cap = IMDB_TEMPLATE.format(
             query = search,
@@ -749,7 +750,8 @@ async def auto_filter(client, msg, spoll=False):
             poster = imdb['poster'],
             plot = imdb['plot'],
             rating = imdb['rating'],
-            url = imdb['url']
+            url = imdb['url'],
+            **locals()
         )
     else:
         cap = f"<b>Hey 👋🏻 {message.from_user.mention} 😍\n\n<i>🔖 Title : {search}\n📫 Your Files is Ready Now</i></b>"
