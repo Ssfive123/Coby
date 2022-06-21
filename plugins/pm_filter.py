@@ -102,7 +102,7 @@ async def next_page(bot, query):
         off_set = offset - 6
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("🔀 Pages", callback_data="pagees"),
+            [InlineKeyboardButton("▫️ Pages", callback_data="pagees"),
              InlineKeyboardButton(f"{round(int(offset) / 10) + 1} / {round(total / 10)}",
                                   callback_data="pages"),
              InlineKeyboardButton("⏪ Previous", callback_data=f"next_{req}_{key}_{off_set}")]
@@ -110,7 +110,7 @@ async def next_page(bot, query):
     elif off_set is None:
         btn.append(
             [
-                InlineKeyboardButton("🔀 Pages", callback_data="pagees"),
+                InlineKeyboardButton("▫️ Pages", callback_data="pagees"),
                 InlineKeyboardButton(f"{round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pagees"),
                 InlineKeyboardButton("Next ⏩️", callback_data=f"next_{req}_{key}_{n_offset}")]
         )
@@ -711,8 +711,8 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton("💽 Pages", callback_data="pagees"),
-             InlineKeyboardButton(text=f"1/{round(int(total_results) / 10)} 💽", callback_data="pages"),
+            [InlineKeyboardButton("▫️ Pages", callback_data="pagees"),
+             InlineKeyboardButton(text=f"1/{round(int(total_results) / 10)}", callback_data="pages"),
              InlineKeyboardButton(text="Next ⏩️", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
