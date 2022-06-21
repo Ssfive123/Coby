@@ -58,3 +58,11 @@ Commands
 • /broadcast - to broadcast a message to all DK BOTx users
 • /batch - to create link for multiple posts
 • /link - to create link for one post
+
+<summary>Deploy To Heroku</summary>
+<br>
+<p>
+<a href="https://heroku.com/deploy?template=https://github.com/Ssfive123/Spidey-Robot">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
+</p>
