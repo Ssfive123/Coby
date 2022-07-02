@@ -647,6 +647,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
       
             InlineKeyboardButton('🇮🇳 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 🇮🇳', callback_data='malayalam')
+            ], [
+            InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url=f"https://google.com/search?q={search}")
+
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(        
@@ -659,6 +662,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
       
             InlineKeyboardButton('🇬🇧 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴇɴɢʟɪsʜ 🇬🇧', callback_data='english')
+            ], [
+            InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url=f"https://google.com/search?q={search}")
+
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(        
@@ -813,9 +819,9 @@ async def advantage_spell_chok(msg):
 
       
 
-            InlineKeyboardButton('📝 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 📝', callback_data='malayalam')
+            InlineKeyboardButton('🇮🇳 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 🇮🇳', callback_data='malayalam')
             ],[
-            InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url=f"https://google.com/search?query=")
+            InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url=f"https://google.com/search?q={search}")
 
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -859,7 +865,7 @@ async def advantage_spell_chok(msg):
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
         t = await msg.reply_text(
-        text="<b>ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ. ᴄʜᴇᴄᴋ ʏᴏᴜʀ ꜱᴘᴇʟʟɪɴɢ</b>\n› <a href=https://t.me/MWUpdatez><b>ᴍᴡ ᴜᴘᴅᴀᴛᴇᴢ</b></a>", disable_web_page_preview=True,
+        text="<b>ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ. ᴄʜᴇᴄᴋ ʏᴏᴜʀ ꜱᴘᴇʟʟɪɴɢ</b>", disable_web_page_preview=True,
         )        
         await asyncio.sleep(8)
         await t.delete()
@@ -874,11 +880,11 @@ async def advantage_spell_chok(msg):
     ] for k, movie in enumerate(movielist)]
    
     buttons = [[
-        InlineKeyboardButton('📝 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 📝', callback_data='malayalam')
+        InlineKeyboardButton('🇮🇳 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 🇮🇳', callback_data='malayalam')
 
         ],[
 
-        InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url=f"https://google.com/search?q=")
+        InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url=f"https://google.com/search?q={search}")
 
     ]]
 
