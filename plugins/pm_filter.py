@@ -645,10 +645,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("ക്യാപ്ഷയിൽ കാണുന്ന username അല്ലകിൽ permanent ലിങ്ക് ക്ലിക്ക് ചെയ്താൽ ഡയറക്റ്റ് എന്റെ ഡിഎം ഇലോട്ടു വെരും അത്കൊണ്ട് അവുടെ ക്ലിക്ക് ചെയ്യ് 😐\n\nദയവു ചെയ്തു മൂവി ഒന്നും വന്നു ചോദിക്കല്ലേ ....😑", show_alert=True)
     elif query.data == "english":
         buttons = [[
-      
             InlineKeyboardButton('🇮🇳 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 🇮🇳', callback_data='malayalam')
-            ],
-            [
+           
+            ],[
+           
             InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url=f"https://google.com/search?q={search}")
 
         ]]
@@ -661,10 +661,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('ᴛʀᴀɴsʟᴀᴛᴇᴅ ᴛᴏ ᴇɴɢʟɪsʜ')
     elif query.data == "malayalam":
         buttons = [[
-      
             InlineKeyboardButton('🇬🇧 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴇɴɢʟɪsʜ 🇬🇧', callback_data='english')
-            ],
-            [
+          
+            ],[
+          
             InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url=f"https://google.com/search?q={search}")
 
         ]]
