@@ -647,7 +647,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
       
             InlineKeyboardButton('🇮🇳 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 🇮🇳', callback_data='malayalam')
-            ],[
+            ],
+            [
             InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url=f"https://google.com/search?q={search}")
 
         ]]
@@ -662,7 +663,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
       
             InlineKeyboardButton('🇬🇧 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴇɴɢʟɪsʜ 🇬🇧', callback_data='english')
-            ],[
+            ],
+            [
             InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url=f"https://google.com/search?q={search}")
 
         ]]
