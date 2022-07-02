@@ -643,8 +643,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("💽 Pages Means 5 Files In One Page 💽\n\n♦️നിങ്ങൾക് ആവശ്യം ഉള്ള ഫയൽസ് കാണുന്നില്ലെങ്കിൽ Click On Next Page \n\n♦️If You Not See Your Files On This Page Then Click On Next Page..😌,",show_alert=True)
     elif query.data == "shivapm":
         await query.answer("ക്യാപ്ഷയിൽ കാണുന്ന username അല്ലകിൽ permanent ലിങ്ക് ക്ലിക്ക് ചെയ്താൽ ഡയറക്റ്റ് എന്റെ ഡിഎം ഇലോട്ടു വെരും അത്കൊണ്ട് അവുടെ ക്ലിക്ക് ചെയ്യ് 😐\n\nദയവു ചെയ്തു മൂവി ഒന്നും വന്നു ചോദിക്കല്ലേ ....😑", show_alert=True)
-    try: await query.answer('Piracy Is Crime') 
-    except: pass
 
 
 async def auto_filter(client, msg, spoll=False):
