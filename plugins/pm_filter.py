@@ -815,9 +815,11 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        t = await msg.reply_text(
+        text="<b>ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ. ᴄʜᴇᴄᴋ ʏᴏᴜʀ ꜱᴘᴇʟʟɪɴɢ</b>\n› <a href=https://t.me/MWUpdatez><b>ᴍᴡ ᴜᴘᴅᴀᴛᴇᴢ</b></a>", disable_web_page_preview=True,
+        )        
         await asyncio.sleep(8)
-        await k.delete()
+        await t.delete()
         return
     SPELL_CHECK[msg.message_id] = movielist
     btn = [[
@@ -826,10 +828,28 @@ async def advantage_spell_chok(msg):
             callback_data=f"spolling#{user}#{k}",
         )
     ] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    s = await msg.reply("<b><i>I couldn't find anything related to that Did you mean any one of these?\n\nനിങ്ങൾ ഉദ്ദേശിച്ച മൂവി താഴെ കാണുന്ന വല്ലതും ആണ് എങ്കിൽ.അതിൽ ക്ലിക്ക് ചെയ്യുക</i></b>", reply_markup=InlineKeyboardMarkup(btn))
-    await asyncio.sleep(60)
-    await s.delete()
+   
+    buttons = [[
+        InlineKeyboardButton('📝 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 📝', callback_data='malayalam')
+
+        ],[
+
+        InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url=f"https://google.com/search?q=")
+
+    ]]
+
+    reply_markup = InlineKeyboardMarkup(buttons)
+    k = await msg.reply_photo(
+        photo="https://telegra.ph/file/a6184ac2fc06ae3785704.jpg",
+        caption=script.ENGLISH_TXT.format(),
+        reply_markup=reply_markup,
+        parse_mode='html'
+        )
+    await asyncio.sleep(30)
+
+    await k.delete()
+
+    await message.delete()
    
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
