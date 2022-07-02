@@ -830,7 +830,7 @@ async def advantage_spell_chok(msg):
         reply_markup = InlineKeyboardMarkup(buttons)
        
         k = await msg.reply_photo(
-            photo="https://telegra.ph/file/a6184ac2fc06ae3785704.jpg",
+            photo="https://telegra.ph/file/555c54d87c54546cb5134.jpg",
             caption=script.ENGLISH_TXT.format(),
             
             reply_markup=reply_markup,
@@ -893,7 +893,7 @@ async def advantage_spell_chok(msg):
 
     reply_markup = InlineKeyboardMarkup(buttons)
     k = await msg.reply_photo(
-        photo="https://telegra.ph/file/a6184ac2fc06ae3785704.jpg",
+        photo="https://telegra.ph/file/555c54d87c54546cb5134.jpg",
         caption=script.ENGLISH_TXT.format(),
         reply_markup=reply_markup,
         parse_mode='html'
