@@ -786,7 +786,26 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("<b>I couldn't find any movie in that name.\n\n<a href='https://t.me/Waste_Time_TG'>Support Group</a></b>")
+        buttons = [[
+
+      
+
+            InlineKeyboardButton('📝 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 📝', callback_data='malayalam')
+            ],[
+            InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url=f"https://google.com/search?q=")
+
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+       
+        k = await msg.reply_photo(
+            photo="https://telegra.ph/file/a6184ac2fc06ae3785704.jpg",
+            caption=script.ENGLISH_TXT.format(),
+            
+            reply_markup=reply_markup,
+
+            parse_mode='html'
+
+        )
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -820,6 +839,7 @@ async def advantage_spell_chok(msg):
         )        
         await asyncio.sleep(8)
         await t.delete()
+        await message.delete()
         return
     SPELL_CHECK[msg.message_id] = movielist
     btn = [[
