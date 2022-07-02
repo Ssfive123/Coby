@@ -665,7 +665,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
           
             ],[
           
-            InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url=f"https://google.com/search?q=")
+            InlineKeyboardButton("🕵️‍♂️ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ 🕵️‍♂️", url=f"https://google.com/search?q={query}")
 
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
